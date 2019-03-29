@@ -15,4 +15,4 @@
 <script>
     $('#data-table').DataTable();
 </script>
-<script src="{{ asset('js/admin/main.js') }}"></script>
+<script src="{{ asset('js/admin/main.js?ver=' . time()) }}"></script>

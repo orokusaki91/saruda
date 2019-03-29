@@ -15,7 +15,7 @@ class CreateGalleriesTable extends Migration
     {
         Schema::create('galleries', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('image_path');
             $table->integer('category_id')->unsigned();
             $table->timestamps();
@@ -23,7 +23,7 @@ class CreateGalleriesTable extends Migration
             $table->foreign('category_id')
                     ->references('id')
                     ->on('gallery_categories')
-                    ->onUpdate('cascade');
+                    ->onDelete('cascade');
         });
     }
 

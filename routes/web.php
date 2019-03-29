@@ -68,23 +68,18 @@ Route::namespace('Admin')
         Route::get('/workinghours/{day}/edit', 'WorkingHoursController@edit')->name('admin.workinghours.edit');
         Route::post('/workinghours/{day}/edit', 'WorkingHoursController@update')->name('admin.workinghours.update');
 
-        // Gallery
-        Route::get('/gallery', 'GalleryController@index')->name('admin.gallery');
-        Route::get('/gallery/create', 'GalleryController@create')->name('admin.gallery.create');
-        Route::post('/gallery/store', 'GalleryController@store')->name('admin.gallery.store');
-        // Route::get('/gallery/{image}/show', 'GalleryController@show')->name('admin.gallery.show');
-        Route::get('/gallery/{image}/edit', 'GalleryController@edit')->name('admin.gallery.edit');
-        Route::post('/gallery/{image}/edit', 'GalleryController@update')->name('admin.gallery.update');
-        Route::post('/gallery/{image}/delete', 'GalleryController@destroy')->name('admin.gallery.delete');
-
         // Gallery category
+        Route::get('/gallery', 'GalleryCategoryController@index')->name('admin.gallery');
         Route::get('/gallery-category/create', 'GalleryCategoryController@create')->name('admin.gallery-category.create');
         Route::post('/gallery-category/store', 'GalleryCategoryController@store')->name('admin.gallery-category.store');
-        // Route::get('/gallery-category/{category}/show', 'GalleryCategoryController@show')->name('admin.gallery-category.show');
+        Route::get('/gallery-category/{category}/show', 'GalleryCategoryController@show')->name('admin.gallery-category.show');
         Route::get('/gallery-category/{category}/edit', 'GalleryCategoryController@edit')->name('admin.gallery-category.edit');
         Route::post('/gallery-category/{category}/edit', 'GalleryCategoryController@update')->name('admin.gallery-category.update');
         Route::post('/gallery-category/{category}/delete', 'GalleryCategoryController@destroy')->name('admin.gallery-category.delete');
 
+        Route::get('/gallery-category/{category}/images/create', 'GalleryCategoryController@createImages')->name('admin.gallery-category.create-images');
+        Route::post('/gallery-category/{category}/images/store', 'GalleryCategoryController@storeImages')->name('admin.gallery-category.store-images');
+        Route::post('/gallery-category/{category}/images/{image}/delete', 'GalleryCategoryController@deleteImage')->name('admin.gallery-category.delete-image');
 
         // Workshop
         Route::namespace('Workshop')->group(function() {

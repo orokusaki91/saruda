@@ -6,60 +6,21 @@
         <div class="col-lg-10 p-3">
             <div class="card">
                 <div class="card-header">
-                    Add New Image
+                    Add New Images to {{ $category->name }}
                 </div>
                 <div class="card-body p-3">
-                    <form method="POST" action="{{ route('admin.gallery.store') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('admin.gallery-category.store-images', ['category' => $category->id]) }}" enctype="multipart/form-data">
                         @csrf
                         <div class="row pb-md-3 align-items-center">
-                            <label for="name" class="col-md-2 col-form-label pt-0 py-md-2">
-                                Image Name
-                            </label>
-                            <div class="col-md-4 pb-3 pb-md-0">
-                                <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required />
-
-                                @if ($errors->has('name'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                            <label for="category_id" class="col-md-2 col-form-label pt-0 py-md-2">
-                                Category
-                            </label>
-                            <div class="col-md-4 pb-3 pb-md-0">
-                                @if ($categories->count())
-                                    <select name="category_id" id="category_id" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}">
-                                        <option selected disabled>Choose category</option>
-                                        @foreach ($categories as $category)
-                                            <option value="{{ $category->id }}">
-                                                {{ $category->name }}
-                                            </option>
-                                        @endforeach
-                                    </select>
-    
-                                    @if ($errors->has('category_id'))
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{ $errors->first('category_id') }}</strong>
-                                        </span>
-                                    @endif
-                                @else
-                                    <a href="{{ route('admin.gallery-category.create') }}" class="btn btn-create">
-                                        Add New Image to Gallery Category
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                        <div class="row pb-md-3 align-items-center">
                             <label class="col-md-2 col-form-label pt-0 py-md-2">
-                                Image
+                                Images
                             </label>
                             <div class="col-md-4 pb-3 pb-md-0">
-                                <input id="image" type="file" class="form-control{{ $errors->has('image') ? ' is-invalid' : '' }}" name="image" />
+                                <input id="image" type="file" class="form-control{{ $errors->has('images') ? ' is-invalid' : '' }}" name="images[]" multiple="" />
 
-                                @if ($errors->has('image'))
+                                @if ($errors->has('images'))
                                     <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('image') }}</strong>
+                                        <strong>{{ $errors->first('images') }}</strong>
                                     </span>
                                 @endif
                             </div>

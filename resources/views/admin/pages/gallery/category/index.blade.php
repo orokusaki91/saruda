@@ -7,34 +7,15 @@
         Go on Admin Home page
     </a>
     @include('admin.flash')
-    <hr />
-    <h4>
-        Gallery
-    </h4>
-    <hr />
-    <a href="{{ route('admin.gallery.create') }}" class="btn btn-create">
-        Add New Image to Gallery
-    </a>
-    <hr />
-    <div class="table-responsive">
-        <table id="data-table" class="table table-striped table-bordered nowrap">
-            <thead>
-                <th>Title</th>
-                <th>Category</th>
-                <th>Action</th>
-            </thead>
-            <tbody>
-                @include('admin.pages.gallery.image._list')
-            </tbody>
-        </table>
-    </div>
+    
     <hr class="mt-4">
+    
     <h4>
         Gallery Category
     </h4>
     <hr />
     <a href="{{ route('admin.gallery-category.create') }}" class="btn btn-create">
-        Add New Image to Gallery Category
+        Add New Gallery Category
     </a>
     <hr />
     <div class="table-responsive">

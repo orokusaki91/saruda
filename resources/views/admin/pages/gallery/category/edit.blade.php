@@ -35,16 +35,6 @@
                             </div>
                         </div>
                     </form>
-                    <div class="form-group row mb-0 mt-5">
-                        <div class="col-md-6 offset-md-5 text-center text-md-left">
-                            <form action="{{ route('admin.gallery-category.delete', ['category' => $category->id]) }}" method="POST">
-                                @csrf
-                                <button type="submit" class="btn btn-danger">
-                                    Delete this record!
-                                </button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
