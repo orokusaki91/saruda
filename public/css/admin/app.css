@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+body {
+	font-family: "Nunito", sans-serif;
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #212529;
+	background-color: #f8fafc;
+}
+
+.navbar-laravel {
+	background-color: #fff;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, .04);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, .04)
+}
+
+/****** Custom Input File ******/
+.custom-input-file {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.custom-input-file + label {
+	max-width: 80%;
+	font-size: 20px;
+	font-weight: 700;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+	display: inline-block;
+	overflow: hidden;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+}
+
+.custom-input-file:focus + label {
+	outline: 1px dotted #000;
+	outline: -webkit-focus-ring-color auto 5px;
+}
+
+.custom-input-file + label svg {
+	width: 1em;
+	height: 1em;
+	vertical-align: middle;
+	fill: currentColor;
+	margin-top: -0.25em;
+	margin-right: 0.25em;
+}
+
+.custom-input-file + label {
+	color: #fff;
+	text-align: center;
+	background: #007bff;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.custom-input-file:focus + label,
+.custom-input-file + label:hover {
+	background-color: #0069d9;
+}
+
+/** Image Tooltip */
+.image-tooltip img {
+	width: auto;
+}
+
+.image-tooltip {
+	text-decoration: none;
+	position: relative;
+}
+
+.image-tooltip span {
+	display: none;
+}
+
+.image-tooltip:hover span {
+	display: block;
+	position: fixed;
+	overflow: hidden;
+	z-index: 1;
+}
+
+/*** printing ***/
+@media print {    
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
+@media screen {
+    .no-print {}
+    .no-screen {
+    	display: none !important;
+    }
+}
