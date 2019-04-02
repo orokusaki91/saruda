@@ -52,6 +52,11 @@ class GalleryCategoryController extends Controller
 
     public function destroy(GalleryCategory $category)
     {
+        if ($category->images->count()) {
+            foreach($category->images as $image){
+                File::delete(public_path($image->image_path));
+            }
+        }
         $category->delete();
         
         return redirect()->route('admin.gallery')->with(['success' => 'You successfuly deleted the category']);
@@ -65,11 +70,13 @@ class GalleryCategoryController extends Controller
 
     public function storeImages(ImageStoreRequest $request, GalleryCategory $category)
     {
-        foreach ($request->images as $image) {
-            $images[] = Gallery::create([
-                'image_path' => uploadFileInPublicFolder($image, $image->getClientOriginalName(), '/img/gallery/' . $category->id . '/'),
+        $counter = 1;
+        foreach ($request->file('images') as $image) {
+            Gallery::create([
+                'image_path' => uploadFileInPublicFolder($image, $image->getClientOriginalName(), '/img/gallery/' . $category->name . '/', $counter),
                 'category_id' => $category->id
-            ]);           
+            ]);
+            $counter++;     
         }
 
         return redirect()->route('admin.gallery-category.show', ['category' => $category->id])
