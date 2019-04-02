@@ -9,6 +9,7 @@
   <!-- jquery -->
   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.min.css">
 
   <!-- FA FA ICONS -->
   <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
@@ -21,7 +22,7 @@
   <link rel="stylesheet" type="text/css" href="{{ asset('css/gallery/grid-gallery.min.css') }}">
 
   <!-- css -->
-  <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css?ver=' . time()) }}">
 
   <!-- favicon -->
  <link rel="icon" href="{{ asset('img/favicon.png') }}">
@@ -625,18 +626,23 @@
             <article>
 
               <section class="get-in-touch">
-                <form>
+                <form method="post" action="{{ route('contact') }}" id="contactForm">
+                  @csrf
                   <fieldset class="form-group">
-                    <input type="text" class="form-control focus input" data-label="Name" id="name" placeholder="Nome">
+                    <input type="text" name="name" class="form-control focus input" data-label="Name" id="name" placeholder="Nome">
+                    <span></span>
                   </fieldset>
                   <fieldset class="form-group">
-                    <input type="text" class="form-control focus input" data-label="Email" id="email" placeholder="Email">
+                    <input type="text" name="email" class="form-control focus input" data-label="Email" id="email" placeholder="Email">
+                    <span></span>
                   </fieldset>
                   <fieldset class="form-group">
-                    <input type="text" class="form-control focus input" data-label="Phone Number" id="phone-number" placeholder="Telefono">
+                    <input type="text" name="phone" class="form-control focus input" data-label="Phone Number" id="phone" placeholder="Telefono">
+                    <span></span>
                   </fieldset>
                   <fieldset class="form-group">
-                    <textarea class="form-control focus input" data-label="Message" id="message" placeholder="Messaggio" rows="4"></textarea>
+                    <textarea class="form-control focus input" name="message" data-label="Message" id="message" placeholder="Messaggio" rows="4"></textarea>
+                    <span></span>
                   </fieldset>
                   <p>N.B.: gli operatori si riservano la possibilità  di modificare l'ordine cronologico delle attività previste nel programma per per una migliore organizzazione della giornata.</p>
                   <button type="submit" class="btn form-control">Invia</button>
@@ -701,7 +707,60 @@
   <script src="{{ asset('js/laboratori.js') }}"></script>
   <script src="{{ asset('js/gallery/dotgallery.js') }}"></script>
   <script src="{{ asset('js/gallery/dotgallerycolor.js') }}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.19.0/sweetalert2.all.min.js"></script>
+
+  <script>
+      $(function () {
+          $('#contactForm').submit(function (e) {
+              e.preventDefault();
+              var form = $(this);
+              var formData = form.serialize();
+              var url = form.attr('action');
+              var submitButton = form.find('button');
+              submitButton.attr('disabled', true);
+
+              $.ajax({
+                  url: url,
+                  data: formData,
+                  method: 'post',
+                  success: function (response) {
+                      // empty all previous errors 
+                      $('.has-error').removeClass('.has-error').text('');
+                      var errors = response.errors;
+
+                      if ($.isEmptyObject(errors)) {
+                          location.reload();
+                      } else {
+                          submitButton.attr('disabled', false);
+                          // print the errors
+                          $.each(errors, function (key, val) {
+                              var input = form.find('[name="'+ key +'"]');
+                              input.next().addClass('has-error').text(val[0]);
+                          });
+                      }
+                  },
+
+                  errors: function() {
+                      location.reload();
+                  }
+              });
+          });
+
+          @if(Session::has('success'))
+            swal(
+              'Finito!',
+              '{{ Session::get('success') }}',
+              'success'
+            );
+          @elseif(Session::has('error'))
+            swal(
+              'Errore!',
+              '{{ Session::get('error') }}',
+              'error'
+            );
+          @endif
+      });
+  </script>
 
 </body>
-
 </html>

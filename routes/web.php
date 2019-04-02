@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index')->name('index');
+Route::post('/contact', 'ContactController')->name('contact');
 
 Route::get('/workshop/{category}', 'HomeController@workshop')->name('workshop');
 
