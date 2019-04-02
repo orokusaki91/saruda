@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <!-- za mobilne -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Villagiosaruda</title>
+  <title>Villaggio Sa Ruda</title>
   <!-- jquery -->
   <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 
