@@ -110,57 +110,24 @@
     <div id="welcome">
       <div class="row">
         <div class="col-2">
-          <h1>Benvenuti al <br>Villaggio Sa Ruda</h1>
-          <p class="lightLetter">Il villaggio neolitico "Sa Ruda" si trova nel Sinis, sulle sponde dello stagno di Cabras, a pochi passi da Tharros e dalle spiagge più belle della costa. Situato all'interno dell'Area Marina Protetta "Penisola del
-            Sinis - Isola Mal di Ventre", in un'ampia area verde presso l'azienda agrituristica omonima, è costituito da capanne arredate, uno spazio coperto per le attività, un recinto per gli animali, il tutto ricostruito a grandezza naturale.</p>
-          <p>Ci trovate nell'Albo Regionale delle Fattorie Didattiche della Sardegna. La qualifica di Fattoria didattica è conferita dall'amministrazione Regionale della Sardegna, che garantisce il rispetto di alti standard qualitativi definiti da
-            un documento chiamato Carta della Qualità. Gli operatori che vengono a contatto con i visitatori devono aver frequentato corsi abilitanti per l'animazione didattica. Questa preparazione permette di valorizzare i mestieri e la manualità
-            artigianale con l'esperienza diretta, diffondendo nelle nuove generazioni e nella società, storia, tradizioni e usanze che si vanno perdendo nel tempo.</p>
+          <h1>Benvenuti al <br>Villaggio Neolitico Sa Ruda</h1>
+          <p class="lightLetter">Il villaggio neolitico "Sa Ruda" si trova nel Sinis, sulle sponde dello stagno di Cabras, a pochi passi da Tharros e dalle spiagge più belle della costa. Situato all'interno dell'Area Marina Protetta "Penisola del Sinis - Isola Mal di Ventre", in un'ampia area verde presso l'azienda agrituristica omonima, è costituito da capanne arredate, uno spazio coperto per le attività, un recinto per gli animali, il tutto ricostruito a grandezza naturale.</p>
+          <p>Ci trovate nell'Albo Regionale delle Fattorie Didattiche della Sardegna. La qualifica di Fattoria didattica è conferita dall'amministrazione Regionale della Sardegna, che garantisce il rispetto di alti standard qualitativi definiti da un documento chiamato Carta della Qualità. Gli operatori che lavorano presso il Villaggio Neolitico Sa Ruda sono archeologi e altro personale qualificato e specializzato.</p>
           <a href="" class="quote-button">Leggi tutto</a>
           <div class="quote-container">
             <blockquote>
               <h4>UN PROGETTO DI ARCHEOLOGIA SPERIMENTALE</h4>
-              <p>L'idea del villaggio neolitico si deve alla grande passione per l'archeologia di Marcella e Nicola, i proprietari dell'azienda, che, residenti nel territorio da una vita, hanno da sempre respirato quel clima di storia e scoperte
-                archeologiche che contraddistingue tutto il Sinis, in particolar modo l'area costiera. Lo spunto per la ricostruzione del villaggio preistorico viene anche dalla presenza, nelle vicinanze di "Sa Ruda", dei siti di Cuccuru Is Arrius e
-                Conca Illonis, interessati dalla presenza umana nei decenni che contraddistinguono il neolitico sardo e caratterizzati da notevoli ritrovamenti archeologici che sono stati importantissimi per la ricostruzione della vita e della morte
-                degli uomini preistorici sardi. Per realizzare la ricostruzione del villaggio in maniera scientifica e del tutto fedele ai dati sinora raccolti nei numerosi studi e scavi effettuati in Sardegna, Marcella e Nicola si sono affidati a
-                un gruppo di archeologi specializzati in Preistoria. Questi hanno seguito i lavori dando tutte le indicazioni per realizzare gli arredi e i manufatti proprio come avveniva nel neolitico, cioé senza l'ausilio di nessun tipo di
-                tecnologia.</p>
+              <p>L'idea del villaggio neolitico si deve alla grande passione per l'archeologia di Marcella e Nicola, i proprietari dell'azienda, che, residenti nel territorio da una vita, hanno da sempre respirato quel clima di storia e scoperte archeologiche che contraddistingue tutto il Sinis.</p> 
+              <p>Lo spunto per la ricostruzione del villaggio preistorico viene anche dalla presenza, nelle vicinanze di "Sa Ruda", dei siti di Cuccuru Is Arrius e Conca Illonis, interessati dalla presenza umana nel passato che contraddistinguono il neolitico sardo e caratterizzati da notevoli ritrovamenti archeologici che sono stati importantissimi per la ricostruzione della vita e della morte degli uomini preistorici sardi.</p> 
+              <p>Per realizzare la ricostruzione del villaggio in maniera scientifica e del tutto fedele ai dati sinora raccolti nei numerosi studi e scavi effettuati in Sardegna, Marcella e Nicola si sono affidati a un gruppo di archeologi specializzati in Preistoria. Questi hanno seguito i lavori dando tutte le indicazioni per realizzare gli arredi e i manufatti proprio come avveniva nel neolitico, cioé senza l'ausilio di nessun tipo di tecnologia.</p>
               <img src="{{ asset('img/readMore/1.jpg') }}" alt="">
-              <p>Per la riproduzione di alcuni oggetti, realizzati in origine con materiali deperibili e quindi non ritrovati in contesti archeologici, si è fatto affidamento a discipline come l'etnostoria e l'etnoarcheologia, la prima volta a
-                raccogliere e studiare le tradizioni orali di rilevanza storica del luogo, la seconda che studia le società tradizionali viventi; ci si è avvalsi quindi della collaborazione di anziani del posto, capaci ancora di far conoscere e
-                tramandare le antiche usanze legate alle attività produttive come la pesca, attività prevalente anche nel neolitico e in particolar modo nel Sinis. Questa collaborazione è stata fondamentale per ricostruire gli attrezzi della pesca,
-                realizzati tutti con fibre vegetali (nasse, reti in lino, imbarcazioni).</p>
-              <p>Ugualmente preziose sono state le informazioni riguardanti la tessitura su telaio verticale. Tutte le materie prime utilizzate per la costruzione delle capanne e degli arredi sono state reperite nei dintorni dell'azienda. Tutto ciò
-                per rendere l'intero progetto più vicino alla realtà locale e a valorizzare le numerose risorse che offre il territorio.</p>
-              <p>Da qui poi è venuta l'idea di condividere il progetto con i bambini e i ragazzi, coscienti dell'importanza del trasmettere e valorizzare la conoscenza del nostro passato in un tempo, questo, contraddistinto dalla tecnologia e dalla
-                velocità.
-                L'esperienza a "Sa Ruda" sarà caratterizzata dai laboratori in cui i bambini e i ragazzi proveranno, con le loro mani, a replicare le principali tecniche produttive del passato con materiali e tecniche preistoriche e vivendo una
-                giornata come artigiani di epoche antiche. I partecipanti diventano quindi protagonisti e tramite questa esperienza giungeranno a una migliore comprensione di alcuni aspetti della preistoria sarda.</p>
+              <p>Per la riproduzione di alcuni oggetti, realizzati in origine con materiali deperibili e quindi non ritrovati in contesti archeologici, si è fatto affidamento a discipline come l'etnografia; ci si è avvalsi quindi della collaborazione di anziani del posto, capaci ancora di far conoscere e tramandare le antiche usanze legate alle attività produttive come la pesca, agricoltura e artigianato. Questa collaborazione è stata fondamentale per ricostruire gli attrezzi della pesca, intreccio, realizzati tutti con fibre vegetali (nasse, reti in lino, imbarcazioni, stuoie e cesti).</p>
+              <p>Ugualmente preziose sono state le informazioni riguardanti la tessitura su telaio verticale. Tutte le materie prime utilizzate per la costruzione delle capanne e degli arredi sono state reperite nei dintorni dell'azienda. Tutto ciò per rendere l'intero progetto più vicino alla realtà locale e a valorizzare le numerose risorse che offre il territorio.</p>
+              <p>Da qui poi è venuta l'idea di condividere il progetto con i bambini e i ragazzi, coscienti dell'importanza del trasmettere e valorizzare la conoscenza del nostro passato in un tempo, questo, contraddistinto dalla tecnologia e dalla velocità. L'esperienza a "Sa Ruda" sarà caratterizzata dai laboratori in cui i bambini e i ragazzi proveranno, con le loro mani, a replicare le principali tecniche produttive del passato con materiali e tecniche preistoriche e vivendo una giornata come protagonisti di epoche antiche.</p>
+              <p>I partecipanti, tramite questa esperienza giungeranno a una migliore comprensione di alcuni aspetti della preistoria sarda.</p>
               <img src="{{ asset('img/readMore/2.jpg') }}" alt="">
               <h4>IL NOSTRO TEAM </h4>
-              <p>I bambini e i ragazzi saranno seguiti in tutte le attività da archeologi specializzati e da operatori specializzati con esperienza pluriennale del villaggio, adeguatamente formati che affiancheranno i gruppi per tutta la giornata
-                nelle visite guidate e nei diversi laboratori, capaci di soddisfare ogni domanda o curiosità che docenti e allievi vorranno porre.</p>
-              <h3 style="color:#845248 ;">ATTIVITÀ NEL VILLAGGIO "SA RUDA"</h3>
-              <p><span style="font-weight:bold;">LEZIONE INTRODUTTIVA GENERALE</span> con supporto di immagini e proiezione di un filmato della durata di 20 minuti circa, incentrato sui seguenti argomenti:</p>
-              <ul>
-                <li>periodizzazione ed elementi di cronologia: la preistoria, il Neolitico, il Neolitico in Sardegna;</li>
-                <li>l'ambiente naturale in Sardegna nel Neolitico;</li>
-                <li>l'edificazione delle capanne;</li>
-                <li>l'economia: agricoltura, allevamento, caccia, pesca, raccolta;</li>
-                <li>le attività: lavorazione della pietra, ceramica, materie dure animali, attività domestiche: tessitura e intreccio</li>
-              </ul>
-              <img src="{{ asset('img/readMore/3.jpg') }}" alt="">
-              <h4> VISITA GUIDATA AL VILLAGGIO</h4>
-              <p>La visita sarà introdotta da una breve spiegazione sul progetto "Villaggio neolitico Sa Ruda", raccontando tutte le fasi, dall'idea alla realizzazione, della ricostruzione del villaggio preistorico. I bambini/ragazzi saranno
-                condotti all'interno delle capanne dagli operatori che parleranno della vita quotidiana e delle attività dell'uomo preistorico, mostrando gli arredi e gli oggetti e spiegandone le funzioni. Ci si troverà completamente immersi in un
-                ambiente preistorico, un'esperienza davvero coinvolgente ed entusiasmante.</p>
-              <h4>TIRO CON L'ARCO</h4>
-              <p>L'utilizzo dell'arco e la sua diffusione presso popolazioni di continenti e culture diverse si deve all'estrema funzionalità di questo strumento che ha modificato le strategie di caccia, facilitando le azioni individuali. I
-                bambini/ragazzi potranno mettersi alla prova con arco e frecce cercando di colpire una sagoma di prolagus sardus come bersaglio. Sarà disputata una gara e all'arciere più bravo sarà consegnato un piccolo dono accompagnato dalla
-                cerimonia di investitura del cacciatore più abile.</p>
-              <p><span style="font-weight:bold;">PROPOSTA RESIDENZIALE 2 GIORNI (1 notte)</span> per scolaresche, gruppi, famiglie, centri estivi per bambini e ragazzi.</p>
-              <h5>PERIODO DI APERTURA: 15 MARZO- 1 OTTOBRE</h5>
+              <p>I bambini e i ragazzi saranno seguiti in tutte le attività da archeologi e da operatori specializzati con esperienza pluriennale del villaggio, adeguatamente formati che affiancheranno i gruppi per tutta la giornata nelle visite guidate e nei diversi laboratori, capaci di soddisfare ogni domanda o curiosità che docenti e allievi vorranno porre.</p>
             </blockquote>
           </div>
 
@@ -170,36 +137,6 @@
         </div>
       </div>
 
-
-      <div class="container">
-        <section>
-          <div class="row">
-
-            <div class="col">
-              <article>
-                <img src="{{ asset('img/readMore/4.jpg') }}" alt="">
-                <h3>LEZIONE INTRODUTTIVA GENERALE</h3>
-              </article>
-            </div>
-
-            <div class="col">
-              <article>
-                <img src="{{ asset('img/readMore/5.jpg') }}" alt="">
-                <h3>TIRO CON L'ARCO</h3>
-              </article>
-            </div>
-
-            <div class="col">
-              <article>
-                <img src="{{ asset('img/readMore/6.jpg') }}" alt="">
-                <h3>VISITA GUIDATA AL VILLAGGIO</h3>
-              </article>
-            </div>
-
-          </div>
-        </section>
-
-      </div>
     </div>
   </section>
   <!-- KRAJ WELCOME -->
@@ -231,7 +168,6 @@
 
           <div class="col">
             <article>
-              <img src="{{ asset('img/doveSiamo/1.jpg') }}" alt="">
               <h2>Orari:</h2>
               <ul>
 
@@ -323,6 +259,15 @@
               </video>
             </article>
           </div>
+
+          <div class="col">
+            <article>
+              <video controls>
+                <source src="{{ asset('video/Villaggio_Sa_ruda.mp4') }}" type="video/mp4" />
+              </video>
+            </article>
+          </div>
+          
         </div>
       </section>
     </div>
@@ -342,6 +287,59 @@
     <div class="container">
       <div class="center">
         <h1>Laboratori</h1>
+
+        <h3 style="color:#845248 ;">ATTIVITÀ NEL VILLAGGIO "SA RUDA"</h3>
+        <p><span style="font-weight:bold;">LEZIONE INTRODUTTIVA GENERALE</span> con supporto di immagini e proiezione di un filmato della durata di 20 minuti circa, incentrato sui seguenti argomenti:</p>
+        <ul class="text-left">
+          <li>periodizzazione ed elementi di cronologia: la preistoria, il Neolitico, il Neolitico in Sardegna;</li>
+          <li>l'ambiente naturale in Sardegna nel Neolitico;</li>
+          <li>l'edificazione delle capanne;</li>
+          <li>l'economia: agricoltura, allevamento, caccia, pesca, raccolta;</li>
+          <li>le attività: lavorazione della pietra, ceramica, materie dure animali, attività domestiche: tessitura e intreccio</li>
+        </ul>
+        <img src="{{ asset('img/readMore/3.jpg') }}" alt="">
+        <h4> VISITA GUIDATA AL VILLAGGIO</h4>
+        <p>La visita sarà introdotta da una breve spiegazione sul progetto "Villaggio neolitico Sa Ruda", raccontando tutte le fasi, dall'idea alla realizzazione, della ricostruzione del villaggio preistorico. I bambini/ragazzi saranno
+          condotti all'interno delle capanne dagli operatori che parleranno della vita quotidiana e delle attività dell'uomo preistorico, mostrando gli arredi e gli oggetti e spiegandone le funzioni. Ci si troverà completamente immersi in un
+          ambiente preistorico, un'esperienza davvero coinvolgente ed entusiasmante.</p>
+        <h4>TIRO CON L'ARCO</h4>
+        <p>L'utilizzo dell'arco e la sua diffusione presso popolazioni di continenti e culture diverse si deve all'estrema funzionalità di questo strumento che ha modificato le strategie di caccia, facilitando le azioni individuali. I
+          bambini/ragazzi potranno mettersi alla prova con arco e frecce cercando di colpire una sagoma di prolagus sardus come bersaglio. Sarà disputata una gara e all'arciere più bravo sarà consegnato un piccolo dono accompagnato dalla
+          cerimonia di investitura del cacciatore più abile.</p>
+        <p><span style="font-weight:bold;">PROPOSTA RESIDENZIALE 2 GIORNI (1 notte)</span> per scolaresche, gruppi, famiglie, centri estivi per bambini e ragazzi.</p>
+        <h5>PERIODO DI APERTURA: 15 MARZO- 1 OTTOBRE</h5>
+
+
+        <section>
+          <div class="row">
+
+            <div class="col">
+              <article>
+                <img src="{{ asset('img/readMore/4.jpg') }}" alt="">
+                <h3>LEZIONE INTRODUTTIVA GENERALE</h3>
+              </article>
+            </div>
+
+            <div class="col">
+              <article>
+                <img src="{{ asset('img/readMore/5.jpg') }}" alt="">
+                <h3>TIRO CON L'ARCO</h3>
+              </article>
+            </div>
+
+            <div class="col">
+              <article>
+                <img src="{{ asset('img/readMore/6.jpg') }}" alt="">
+                <h3>VISITA GUIDATA AL VILLAGGIO</h3>
+              </article>
+            </div>
+
+          </div>
+        </section>
+
+
+
+
         <h4>I nostri Laboratori:</h4>
         <ul>
           <li class="activeLab labFirst"><img src="img/laboratoriIcons/1.png" alt=""><br><br>PREISTORIA</li>
