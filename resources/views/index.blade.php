@@ -92,6 +92,7 @@
               </li>
             @endforeach
           </ul>
+          <h3 class="slider-heading">Benvenuti al <br>Villaggio Neolitico Sa Ruda</h3>
         </div>
       </div>
     </div>
@@ -247,14 +248,6 @@
           <div class="col">
             <article>
               <video controls>
-                <source src="{{ asset('video/video5.mp4') }}" type="video/mp4" />
-              </video>
-            </article>
-          </div>
-
-          <div class="col">
-            <article>
-              <video controls>
                 <source src="{{ asset('video/villaggio1.mp4') }}" type="video/mp4" />
               </video>
             </article>
@@ -377,7 +370,7 @@
                   @endforeach
 
                   @if ($prehistory_pdf !== null)
-                    <li>
+                    <li style="margin-top: 13px;">
                       <a href="{{ route('downloadPDF', ['pdf' => $prehistory_pdf->id]) }}"><i class="fa fa-eye" aria-hidden="true"></i> PDF</a>
                     </li>
                   @endif
@@ -417,7 +410,7 @@
                     @endforeach
 
                     @if ($traditions_pdf !== null)
-                      <li>
+                      <li style="margin-top: 13px;">
                         <a href="{{ route('downloadPDF', ['pdf' => $traditions_pdf->id]) }}"><i class="fa fa-eye" aria-hidden="true"></i> PDF</a>
                       </li>
                     @endif
@@ -458,7 +451,7 @@
                     @endforeach
 
                     @if ($baby_pdf !== null)
-                      <li>
+                      <li style="margin-top: 13px;">
                         <a href="{{ route('downloadPDF', ['pdf' => $baby_pdf->id]) }}"><i class="fa fa-eye" aria-hidden="true"></i> PDF</a>
                       </li>
                     @endif
