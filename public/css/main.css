@@ -206,6 +206,10 @@ navigation
 	color:#3B5998 !important;
 }
 @media only screen and (max-width: 992px) {
+  #nav {
+    position: absolute;
+  }
+
   #nav .nav-mobile {
     display: block;
   }

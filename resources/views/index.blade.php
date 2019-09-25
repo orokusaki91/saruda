@@ -59,6 +59,19 @@
               <li>
                 <a href="#laboratori">Laboratori</a>
               </li>
+              @if ($prehistory_pdf !== null)
+                <li>
+                  <a href="{{ route('downloadPDF', ['pdf' => $prehistory_pdf->id]) }}">Brochure</a>
+                </li>
+              @elseif($baby_pdf !== null)
+                <li>
+                  <a href="{{ route('downloadPDF', ['pdf' => $baby_pdf->id]) }}">Brochure</a>
+                </li>
+              @elseif($traditions_pdf !== null)
+                <li>
+                  <a href="{{ route('downloadPDF', ['pdf' => $traditions_pdf->id]) }}">Brochure</a>
+                </li>
+              @endif
               <li>
                 <a href="#prezi">Info e prezzi</a>
               </li>

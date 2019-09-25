@@ -25,7 +25,7 @@ class HomeImageRequest extends FormRequest
     {
         return [
             'name' => 'required|min:3',
-            'image' => 'required|mimes:jpeg,jpg,png|max:2000'
+            'image' => 'required|mimes:jpeg,jpg,png|max:5000'
         ];
     }
 }

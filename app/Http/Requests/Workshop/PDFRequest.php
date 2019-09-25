@@ -24,7 +24,7 @@ class PDFRequest extends FormRequest
     public function rules()
     {
         return [
-            'pdf' => 'required|mimes:pdf|max:2048'
+            'pdf' => 'required|mimes:pdf|max:5000'
         ];
     }
 }
