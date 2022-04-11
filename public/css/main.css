@@ -1261,16 +1261,22 @@ MEDIA- responsive
     margin: 0 auto;
     display: block;
   }
-    #laboratori .container .row .col {
-		width:100%;
+
+  #laboratory-nav img {
+		height: 30px !important;
 	}
-	#laboratori .container .row .col ul {
-		margin:0;
-		padding:0;
+
+  #laboratory-nav p {
+		font-size: 12px !important;
+	}
+
+  #laboratory-nav li {
+		padding: 0px !important;
+    margin: 0px 10px !important;
 	}
 	
 	#contatti .container .row .col {
-		width:100%;
+		width: 100% !important;
 	}
 }
 
@@ -1320,4 +1326,18 @@ h1 {
 
 #labThirdRow {
   display: none;
+}
+
+@media all and (max-width: 768px) {
+  #laboratori #laboratory-tabs .row .col {
+		width: 100% !important;
+    text-align: left !important;
+    max-height: 1000px !important;
+    height: auto !important;
+	}
+
+	#laboratori #laboratory-tabs ul {
+		margin:0;
+		padding:0;
+	}
 }

@@ -347,13 +347,13 @@
 
 
         <h4>I nostri Laboratori:</h4>
-        <ul>
-          <li class="activeLab labFirst"><img src="img/laboratoriIcons/1.png" alt=""><br><br>PREISTORIA</li>
-          <li class="labSecond"><img src="img/laboratoriIcons/2.png" alt=""><br><br>TRADIZIONI</li>
-          <li class="labThird"><img src="img/laboratoriIcons/3.png" alt=""><br><br>BABY</li>
+        <ul id="laboratory-nav">
+          <li class="activeLab labFirst"><img src="img/laboratoriIcons/1.png" alt=""><br><br><p>PREISTORIA</p></li>
+          <li class="labSecond"><img src="img/laboratoriIcons/2.png" alt=""><br><br><p>TRADIZIONI</p></li>
+          <li class="labThird"><img src="img/laboratoriIcons/3.png" alt=""><br><br><p>BABY</p></li>
         </ul>
       </div>
-      <section>
+      <section id="laboratory-tabs">
 
         <div id="labFirstRow">
           <div class="row">
@@ -383,7 +383,7 @@
                   @endforeach
 
                   @if ($prehistory_pdf !== null)
-                    <li style="margin-top: 13px;">
+                    <li style="margin-top: 15px;">
                       <a href="{{ route('downloadPDF', ['pdf' => $prehistory_pdf->id]) }}"><i class="fa fa-eye" aria-hidden="true"></i> PDF</a>
                     </li>
                   @endif
