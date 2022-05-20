@@ -344,7 +344,9 @@
         </section>
 
 
-
+        <div class="col" style="text-align: center; margin-top: 20px;">
+          <a href="{{ asset('pdf/Preventivo_Villaggio-Sa-Ruda.pdf') }}" target="_blank" style="font-size: 20px;">PDF PREVENTIVO</a>
+        </div>
 
         <h4>I nostri Laboratori:</h4>
         <ul id="laboratory-nav">
@@ -507,6 +509,10 @@
             </article>
           </div>
 
+        </div>
+
+        <div class="col" style="text-align: center; margin-top: 20px;">
+          <a href="{{ asset('pdf/Preventivo_Villaggio-Sa-Ruda.pdf') }}" target="_blank" style="font-size: 20px;">PDF PREVENTIVO</a>
         </div>
       </section>
 
